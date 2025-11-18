@@ -1,3 +1,13 @@
+.testata{
+    color: brown; 
+    border-radius: 15px; 
+    border: solid 2px;
+}
+h1{
+    display: flex;
+    justify-content: center; 
+    background-color: goldenrod;
+}
 .container{
     margin-top: 1%;
     margin-left: 2%;
@@ -21,7 +31,7 @@
     height: 200px;
     background-color: pink;
 }
-.testoSpan{
+span{
     margin-top: 2%;
     display: flex;
     justify-content: center;
@@ -39,4 +49,25 @@
     font-size: 0.7rem;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(4, 4, 124);
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 80%x;
+    border: 2px;
+    border-radius: 5px;
+    background-color: lightcoral;
+
+}
+.img-container img{
+    width: 50%;
+    border-radius: 2%;
 }
