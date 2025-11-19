@@ -2,11 +2,18 @@
     color: brown; 
     border-radius: 15px; 
     border: solid 2px;
+    background-color: goldenrod;
 }
+
+.navbar-goldenrod {
+    background-color: goldenrod;
+    border-radius: 15px;
+    border: solid 2px;
+  }
+
 h1{
     display: flex;
-    justify-content: center; 
-    background-color: goldenrod;
+    justify-content: center;
 }
 .container{
     margin-top: 1%;
