@@ -2,177 +2,219 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/94c4c4af99.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico"v=1 type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>YouRelax</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/94c4c4af99.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" v=1 type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>YouRelax</title>
 </head>
 
 <body>
   <div class="header">
     <div class="testata">
-        <h1>YouRelax</h1>
+      <h1>YouRelax</h1>
+
+<!-- ------------------------ NAVBAR ----------------------------- -->
+
     </div>
     <nav class="navbar navbar-expand-lg navbar-goldenrod">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Scegli qui:</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Ares 118</a></li>
-            <li><a class="dropdown-item" href="#">Pronto Intervento</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Altro</a></li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Scegli qui:</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ares 118</a></li>
+                <li><a class="dropdown-item" href="#">Pronto Intervento</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Altro</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Curiosità</a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Curiosità</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Cerca qui..." aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Cerca</button>
-      </form>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cerca qui..." aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+<!-- ---------------------- FINE NAVBAR -------------------------------- -->
+
+  <!-- ---------------------INIZIO CARDS ------------------------------- -->
+  <div class="container">
+    <div class="card" 
+        role="button" 
+        data-bs-toggle="modal" 
+        data-bs-target="#modalSalute" 
+        style="width: 14rem;cursor: pointer;">
+      <img
+        src="https://media.istockphoto.com/id/1613148057/it/foto/salute-mentale.jpg?s=612x612&w=0&k=20&c=263CihK3C4SocmMyltswMUFnj9gfRSRnRgd_oVZvPL0="
+        class="card-img-top" alt="salute">
+      <div class="card-body">
+        <p class="card-text">La salute è uno stato di completo benessere fisico,
+          mentale e sociale, non solo assenza di malattia,
+          che permette equilibrio, adattamento, autonomia,
+          relazioni positive e qualità della vita quotidiana.</p>
+      </div>
+    </div>
+
+    <!-- ----------------- MODALE SALUTE --------------------- -->
+<div class="modal" id ="modalSalute" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">LA SALUTE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>La salute è uno stato di completo benessere fisico, 
+          mentale e sociale, non solo l'assenza di malattia, 
+          come definito dall'Organizzazione Mondiale della Sanità (OMS). 
+          È un concetto complesso che include la capacità di adattarsi ai cambiamenti,
+           di mantenere un equilibrio vitale e di partecipare attivamente 
+           alla vita sociale. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-primary">Salva</button>
+      </div>
     </div>
   </div>
-</nav>
 </div>
-    <div class="container">
-      <div class="card" style="width: 14rem;">
-  <img src="https://media.istockphoto.com/id/1613148057/it/foto/salute-mentale.jpg?s=612x612&w=0&k=20&c=263CihK3C4SocmMyltswMUFnj9gfRSRnRgd_oVZvPL0=" class="card-img-top" alt="salute">
-  <div class="card-body">
-    <p class="card-text">La salute è uno stato di completo benessere fisico, 
-                    mentale e sociale, non solo assenza di malattia,
-                     che permette equilibrio, adattamento, autonomia, 
-                     relazioni positive e qualità della vita quotidiana.</p>
-  </div>
-</div>
-        <!-- <div class="articoli">
-            <span>Salute</span>
-           
-            <div>
-                <span class="articoloSpan">
-                    La salute è uno stato di completo benessere fisico, 
-                    mentale e sociale, non solo assenza di malattia,
-                     che permette equilibrio, adattamento, autonomia, 
-                     relazioni positive e qualità della vita quotidiana.
-                </span>
-            </div>
-        </div> -->
-<div class="card" style="width: 14rem;">
-  <img src="https://images.ctfassets.net/sqy8sbi9hlp9/4yeVpJTluyvfTbmeQUhr4L/0cd8ab4b778114ca96f09db0a5014cc3/unnamed.jpg?w=750&h=500&fl=progressive&q=50&fm=jpg" class="card-img-top" alt="Prevenzione">
-  <div class="card-body">
-    <p class="card-text">La prevenzione consiste in azioni e comportamenti
-                     volti a evitare malattie o danni alla salute, 
-                    promuovere stili di vita sani, ridurre rischi e 
-                    garantire benessere fisico, mentale e sociale.</p>
-  </div>
-</div>
-        <!-- <div class="articoli">
-            <span>Prevenzione</span>
-            <div>
-                <span class="articoloSpan">
-                    La prevenzione consiste in azioni e comportamenti
-                     volti a evitare malattie o danni alla salute, 
-                    promuovere stili di vita sani, ridurre rischi e 
-                    garantire benessere fisico, mentale e sociale.
-                </span>
-            </div>
-        </div> -->
-<div class="card" style="width: 14rem;">
-  <img src="https://img.freepik.com/foto-gratuito/strumenti-sportivi_53876-138077.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top" alt="sport">
-  <div class="card-body">
-    <p class="card-text">Fare sport migliora la salute fisica, rinforza muscoli e ossa, 
-                    favorisce il benessere mentale, riduce stress, sviluppa disciplina,
-                     socializzazione e autostima, prevenendo malattie 
-                     e promuovendo uno stile di vita sano.</p>
-  </div>
-</div>
-        <!-- <div class="articoli">
-            <span>Sport</span>
-            <div>
-                <span class="articoloSpan">
-                    Fare sport migliora la salute fisica, rinforza muscoli e ossa, 
-                    favorisce il benessere mentale, riduce stress, sviluppa disciplina,
-                     socializzazione e autostima, prevenendo malattie 
-                     e promuovendo uno stile di vita sano.
-                </span>
-            </div>
-        </div> -->
-<div class="card" style="width: 14rem;">
-  <img src="https://t4.ftcdn.net/jpg/03/07/47/51/360_F_307475146_PNmZpPfzy19ULP3JpSUNIxG5uI30HY6X.jpg" class="card-img-top" alt="relax">
-  <div class="card-body">
-    <p class="card-text">Il relax è fondamentale per ridurre stress e tensione, 
-                    favorire il benessere mentale e fisico, rigenerare energie,
-                     migliorare concentrazione e umore, mantenendo 
-                     equilibrio emotivo e qualità della vita quotidiana.</p>
-  </div>
-</div>
-        <!-- <div class="articoli">
-            <span>Relax</span>
-            <div>
-                <span class="articoloSpan">
-                    Il relax è fondamentale per ridurre stress e tensione, 
-                    favorire il benessere mentale e fisico, rigenerare energie,
-                     migliorare concentrazione e umore, mantenendo 
-                     equilibrio emotivo e qualità della vita quotidiana.
-                </span>
-            </div>
-        </div> -->
+
+    <div class="card"
+    role="button" 
+        data-bs-toggle="modal" 
+        data-bs-target="#modalPrevenzione" 
+     style="width: 14rem; cursor: pointer;">
+      <img
+        src="https://images.ctfassets.net/sqy8sbi9hlp9/4yeVpJTluyvfTbmeQUhr4L/0cd8ab4b778114ca96f09db0a5014cc3/unnamed.jpg?w=750&h=500&fl=progressive&q=50&fm=jpg"
+        class="card-img-top" alt="Prevenzione">
+      <div class="card-body">
+        <p class="card-text">La prevenzione consiste in azioni e comportamenti
+          volti a evitare malattie o danni alla salute,
+          promuovere stili di vita sani, ridurre rischi e
+          garantire benessere fisico, mentale e sociale.</p>
+      </div>
     </div>
-    <div class="container">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://wallpapers.com/images/hd/health-pictures-wzhn47jws3e8w5zc.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://static.vecteezy.com/system/resources/previews/021/883/288/non_2x/immunology-illustration-with-people-immune-protection-system-helping-to-get-rid-of-infections-and-harmful-bacteria-in-cartoon-hand-drawn-templates-vector.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://www.padovaring.it/wp-content/uploads/2025/02/Una-psicologia-dello-sport-o-una-psicologia-dellessere-umano-che-fa-sport-Padova-ring-boxe.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://cdn.pixabay.com/photo/2022/04/19/08/32/relax-7142183_1280.jpg" class="d-block w-100" alt="...">
+<!-- -------------------- MODALE Prevenzione ------------------- -->
+ <div class="modal" id ="modalPrevenzione" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">LA PREVENZIONE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>La prevenzione è l'insieme di azioni e comportamenti 
+          volti a ridurre o eliminare il rischio di malattie, 
+          infortuni o danni alla salute, sia a livello individuale 
+          che collettivo. Si articola principalmente in tre livelli:
+           primaria (evitare l'insorgenza della malattia), 
+           secondaria (identificare la malattia nelle fasi precoci) e terziaria 
+           (gestire le conseguenze di una malattia già presente).  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-primary">Salva</button>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Precedente</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Prossimo</span>
-  </button>
 </div>
+
+
+    <div class="card" style="width: 14rem;">
+      <img src="https://img.freepik.com/foto-gratuito/strumenti-sportivi_53876-138077.jpg?semt=ais_hybrid&w=740&q=80"
+        class="card-img-top" alt="sport">
+      <div class="card-body">
+        <p class="card-text">Fare sport migliora la salute fisica, rinforza muscoli e ossa,
+          favorisce il benessere mentale, riduce stress, sviluppa disciplina,
+          socializzazione e autostima, prevenendo malattie
+          e promuovendo uno stile di vita sano.</p>
+      </div>
     </div>
-   <footer>
+
+    <div class="card" style="width: 14rem;">
+      <img src="https://t4.ftcdn.net/jpg/03/07/47/51/360_F_307475146_PNmZpPfzy19ULP3JpSUNIxG5uI30HY6X.jpg"
+        class="card-img-top" alt="relax">
+      <div class="card-body">
+        <p class="card-text">Il relax è fondamentale per ridurre stress e tensione,
+          favorire il benessere mentale e fisico, rigenerare energie,
+          migliorare concentrazione e umore, mantenendo
+          equilibrio emotivo e qualità della vita quotidiana.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://wallpapers.com/images/hd/health-pictures-wzhn47jws3e8w5zc.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/021/883/288/non_2x/immunology-illustration-with-people-immune-protection-system-helping-to-get-rid-of-infections-and-harmful-bacteria-in-cartoon-hand-drawn-templates-vector.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.padovaring.it/wp-content/uploads/2025/02/Una-psicologia-dello-sport-o-una-psicologia-dellessere-umano-che-fa-sport-Padova-ring-boxe.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2022/04/19/08/32/relax-7142183_1280.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Precedente</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Prossimo</span>
+      </button>
+    </div>
+  </div>
+  <footer>
     <h2>YouRelax</h2>
     <h4>Copyright<i class="copyright-icon fa-regular fa-copyright"></i>2025</h4>
     <h3>Follow us:</h3>
     <i class="fa-brands fa-square-x-twitter"></i>
     <i class="fa-brands fa-square-facebook"></i>
     <i class="fa-brands fa-square-instagram"></i>
-   </footer>
+  </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </html>
